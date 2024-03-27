@@ -4,14 +4,17 @@ Nature of Logistic Regression:
 
 Logistic regression is commonly used for binary classification problems, where the target variable has two possible outcomes (e.g., 0 or 1). The logistic function (also known as the sigmoid function) is used to model the probability that a given input belongs to one of the classes.
 Cross-entropy loss is well-suited for logistic regression because it measures the dissimilarity between the predicted probabilities and the actual class labels.
+
 Interpretability:
 
 Cross-entropy loss directly relates to the likelihood of the predicted probabilities matching the actual labels. It's intuitive to interpret: the lower the cross-entropy loss, the better the model's predictions align with the true labels.
 In contrast, MSE doesn't directly relate to the probabilities. It's more suited for regression tasks where the output is continuous and measuring the squared difference between predicted and actual values is meaningful.
+
 Gradient Descent Optimization:
 
 Cross-entropy loss leads to smoother gradients during optimization compared to MSE, especially when used in conjunction with the logistic activation function.
 In logistic regression, optimizing cross-entropy loss through techniques like gradient descent tends to converge faster and more reliably to the global optimum due to its convex nature.
+
 Single Optimal Solution:
 
 Cross-entropy loss guarantees a single best solution due to its convexity. There's no ambiguity in the optimization process, and the model converges to a unique set of parameters that minimize the loss function.
